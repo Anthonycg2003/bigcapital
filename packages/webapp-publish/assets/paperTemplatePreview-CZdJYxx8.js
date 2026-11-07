@@ -1,0 +1,1 @@
+import{am as r}from"./index-D6eJWRgj.js";const s=new Set(["templateName","companyLogoKey"]),c={borderRadius:5,boxShadow:"inset 0 4px 0 0 var(--invoice-primary-color), 0 10px 15px rgba(0, 0, 0, 0.05)"};function i(e,a){const o=[...Object.keys(a).filter(p=>!s.has(p)),"companyAddress"];return r.pick(e,o)}export{c as a,i as p};

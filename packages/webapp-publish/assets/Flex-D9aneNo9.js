@@ -1,0 +1,1 @@
+import{w as t,f1 as l,eU as m}from"./index-D6eJWRgj.js";function F({children:x,col:e=12,gap:s,align:r,className:n,style:i}){return t.jsxs(l,{col:e,gap:s,align:r,className:n,style:i,children:[x,t.jsx(m,{col:e,gap:s})]})}export{F};

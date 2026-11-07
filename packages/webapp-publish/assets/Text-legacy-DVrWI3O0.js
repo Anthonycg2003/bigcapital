@@ -1,0 +1,1 @@
+System.register(["./index-legacy-DIiV7_Ij.js"],(function(e,t){"use strict";var r,c;return{setters:[e=>{r=e.w,c=e.c8}],execute:function(){e("T",(({children:e,...t})=>r.jsx(c.div,{...t,children:e})))}}}));

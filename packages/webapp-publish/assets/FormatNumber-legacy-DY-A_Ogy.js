@@ -1,0 +1,1 @@
+System.register(["./index-legacy-DIiV7_Ij.js"],(function(e,r){"use strict";var n,t;return{setters:[e=>{n=e.dw,t=e.w}],execute:function(){function r({value:e,currency:r="",noZero:t}){return n(e,r,{noZero:t})}e({F:r,a:function({value:e,column:{formatNumber:n}}){return t.jsx(r,{value:e,...n})}})}}}));

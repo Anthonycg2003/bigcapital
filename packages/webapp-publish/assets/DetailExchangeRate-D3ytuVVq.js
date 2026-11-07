@@ -1,0 +1,1 @@
+import{dy as s,am as n,w as r,oS as i,be as l}from"./index-D6eJWRgj.js";function o({exchangeRate:t,toCurrency:e}){const a=s();return n.isEqual(a,e)?null:r.jsxs(i,{label:l.get("exchange_rate"),children:["1 ",a," = ",t," ",e]})}const c=o;export{c as E};

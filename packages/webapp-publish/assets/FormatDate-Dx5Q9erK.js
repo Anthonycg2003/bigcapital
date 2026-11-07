@@ -1,0 +1,1 @@
+import{w as o,be as r,dq as n}from"./index-D6eJWRgj.js";function s({value:t,format:a="YYYY MMM DD"}){const e=r.get("date_formats.".concat(a));return o.jsx(o.Fragment,{children:n(t).format(e)})}function c({value:t,column:{formatDate:a}}){return o.jsx(s,{value:t,...a})}export{c as F,s as a};

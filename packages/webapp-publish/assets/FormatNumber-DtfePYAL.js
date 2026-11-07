@@ -1,0 +1,1 @@
+import{dw as m,w as n}from"./index-D6eJWRgj.js";function u({value:r,currency:t="",noZero:o}){return m(r,t,{noZero:o})}function e({value:r,column:{formatNumber:t}}){return n.jsx(u,{value:r,...t})}export{u as F,e as a};

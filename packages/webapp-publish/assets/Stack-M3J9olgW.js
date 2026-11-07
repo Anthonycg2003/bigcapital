@@ -1,0 +1,1 @@
+import{w as e,c8 as n}from"./index-D6eJWRgj.js";function x({spacing:t=20,align:s="stretch",justify:o="top",...i}){return e.jsx(n.div,{display:"flex",flexDirection:"column",justifyContent:"justify",gap:"".concat(t,"px"),alignItems:s,...i})}export{x as S};

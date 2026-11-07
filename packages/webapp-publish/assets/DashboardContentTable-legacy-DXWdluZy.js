@@ -1,0 +1,1 @@
+System.register(["./index-legacy-DIiV7_Ij.js"],(function(e,t){"use strict";var n,r,c;return{setters:[e=>{n=e.w,r=e.c,c=e.bu}],execute:function(){e("D",(function({children:e}){return n.jsx("div",{className:r(c.DASHBOARD_DATATABLE),children:e})}))}}}));

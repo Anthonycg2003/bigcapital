@@ -1,0 +1,1 @@
+import{ds as n}from"./index-D6eJWRgj.js";const o=t=>t==null?void 0:t.attachments,a={key:"",size:0,originName:"",mimeType:""},c=t=>{var m,e;return(e=(m=o(t))==null?void 0:m.map(r=>n(r,a)))!=null?e:[]},h=t=>{var m;return(m=o(t))==null?void 0:m.map(e=>({key:e.key}))};export{h as a,c as t};

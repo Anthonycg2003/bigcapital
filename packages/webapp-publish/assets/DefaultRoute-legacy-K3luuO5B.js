@@ -1,0 +1,1 @@
+System.register(["./index-legacy-DIiV7_Ij.js"],(function(e,r){"use strict";var t,n;return{setters:[e=>{t=e.w,n=e.b9}],execute:function(){e("DefaultRoute",(function(){return t.jsx(n,{from:"/preferences",to:"/preferences/general"})}))}}}));

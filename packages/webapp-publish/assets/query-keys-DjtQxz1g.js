@@ -1,0 +1,1 @@
+const R="VENDOR_CREDITS",D="VENDOR_CREDIT",N="REFUND_VENDOR_CREDIT",C="REFUND_VENDOR_CREDIT_TRANSACTION",_="RECONCILE_VENDOR_CREDIT",I="RECONCILE_VENDOR_CREDITS",O={all:()=>[R],list:E=>[R,E],detail:E=>[D,E],refund:E=>[N,E],refundTransaction:E=>[C,E],reconcile:E=>[_,E],reconciles:E=>[I,E]};export{O as v};

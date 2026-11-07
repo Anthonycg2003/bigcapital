@@ -1,0 +1,1 @@
+import{hS as s,hT as S,hU as o,hV as T,bm as n}from"./index-D6eJWRgj.js";const E=e=>({type:s,payload:{queries:e}}),r=()=>({type:S}),a=e=>({type:o,payload:e}),c=()=>({type:T}),m=e=>({setItemsTableState:t=>e(E(t)),resetItemsTableState:()=>e(r()),setItemsSelectedRows:t=>e(a(t)),resetItemsSelectedRows:()=>e(c())});function l(e){return n(null,m)(e)}export{l as w};

@@ -1,0 +1,1 @@
+System.register([],(function(E,R){"use strict";return{execute:function(){const R="VENDOR_CREDITS";E("v",{all:()=>[R],list:E=>[R,E],detail:E=>["VENDOR_CREDIT",E],refund:E=>["REFUND_VENDOR_CREDIT",E],refundTransaction:E=>["REFUND_VENDOR_CREDIT_TRANSACTION",E],reconcile:E=>["RECONCILE_VENDOR_CREDIT",E],reconciles:E=>["RECONCILE_VENDOR_CREDITS",E]})}}}));

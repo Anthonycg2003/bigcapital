@@ -1,0 +1,1 @@
+System.register([],(function(e,t){"use strict";return{execute:function(){e("g",(e=>{const{total:t,page:i,pageSize:a,page_size:n}=e.pagination,g=a??n??0;return g>0&&t>g*i?i+1:void 0})),e("a",(e=>e.pagination.page>1?e.pagination.page-1:void 0))}}}));

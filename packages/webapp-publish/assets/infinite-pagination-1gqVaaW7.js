@@ -1,0 +1,1 @@
+const r=a=>{var i;const{total:e,page:n,pageSize:t,page_size:g}=a.pagination,o=(i=t!=null?t:g)!=null?i:0;return o>0&&e>o*n?n+1:void 0},s=a=>a.pagination.page>1?a.pagination.page-1:void 0;export{s as a,r as g};
