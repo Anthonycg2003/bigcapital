@@ -166,3 +166,47 @@ export const transformRegisterToastMessages = (
   }
   return toastErrors;
 };
+
+/**
+ * Message for a signup failure that was not mapped to a field or a known toast.
+ * Network failures and unexpected server responses used to leave the button
+ * looking like it did nothing.
+ */
+export const getUnhandledRegisterToast = (
+  error: unknown,
+  handledFieldErrors: Record<string, string>,
+  handledToasts: ToastMessage[],
+): ToastMessage | null => {
+  if (handledToasts.length > 0 || Object.keys(handledFieldErrors).length > 0) {
+    return null;
+  }
+
+  const data = (error as { data?: { message?: unknown } } | undefined)?.data;
+  const message = data?.message;
+
+  if (typeof message === 'string' && message.trim()) {
+    return { message, intent: Intent.DANGER };
+  }
+
+  if (Array.isArray(message)) {
+    const constraint = message
+      .flatMap((item) => {
+        if (!item || typeof item !== 'object' || !('constraints' in item)) {
+          return [];
+        }
+        const constraints = (item as { constraints?: Record<string, unknown> })
+          .constraints;
+        return constraints ? Object.values(constraints) : [];
+      })
+      .find((value): value is string => typeof value === 'string' && !!value);
+
+    if (constraint) {
+      return { message: constraint, intent: Intent.DANGER };
+    }
+  }
+
+  return {
+    message: intl.get('something_wentwrong'),
+    intent: Intent.DANGER,
+  };
+};
