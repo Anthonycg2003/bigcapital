@@ -1,0 +1,1 @@
+System.register(["./index-legacy-D5XI0zpp.js"],(function(t,e){"use strict";var i,n;return{setters:[t=>{i=t.w,n=t.cb}],execute:function(){t("S",(function({spacing:t=20,align:e="stretch",justify:s="top",...c}){return i.jsx(n.div,{display:"flex",flexDirection:"column",justifyContent:"justify",gap:`${t}px`,alignItems:e,...c})}))}}}));

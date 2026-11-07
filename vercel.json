@@ -1,9 +1,16 @@
 {
   "installCommand": "pnpm install",
-  "buildCommand": "CI='' pnpm run build:webapp",
+  "buildCommand": "CI='' pnpm run build:server",
   "outputDirectory": "packages/webapp/dist",
-  "rewrites": [{
-    "source": "/(.*)",
-    "destination": "/"
-  }]
+  "functions": {
+    "api/[...path].js": {
+      "includeFiles": "packages/server/dist/**"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/((?!api/|assets/|favicon.ico|manifest.json|preload-theme.js).*)",
+      "destination": "/index.html"
+    }
+  ]
 }

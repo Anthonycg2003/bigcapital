@@ -1,0 +1,1 @@
+System.register(["./index-legacy-D5XI0zpp.js"],(function(e,t){"use strict";var r;return{setters:[e=>{r=e.r}],execute:function(){e("u",(function(e=!0){const t=r.useRef(null);return r.useEffect((()=>{t.current&&e&&t.current.focus()}),[t,e]),t}))}}}));

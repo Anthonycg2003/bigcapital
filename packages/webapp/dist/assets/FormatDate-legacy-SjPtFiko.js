@@ -1,0 +1,1 @@
+System.register(["./index-legacy-D5XI0zpp.js"],(function(t,e){"use strict";var n,r,a;return{setters:[t=>{n=t.w,r=t.bh,a=t.dn}],execute:function(){function e({value:t,format:e="YYYY MMM DD"}){const u=r.get(`date_formats.${e}`);return n.jsx(n.Fragment,{children:a(t).format(u)})}t({F:function({value:t,column:{formatDate:r}}){return n.jsx(e,{value:t,...r})},a:e})}}}));

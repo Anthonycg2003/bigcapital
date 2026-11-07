@@ -1,0 +1,1 @@
+System.register([],(function(E,t){"use strict";return{execute:function(){const t="SALE_RECEIPTS";E("r",{all:()=>[t],list:E=>[t,E],detail:E=>["SALE_RECEIPT",E],smsDetail:E=>["SALE_RECEIPT_SMS_DETAIL",E],html:E=>["SALE_RECEIPT_HTML",E],state:()=>["SALE_RECEIPT_STATE"],mailOptions:E=>["SALE_RECEIPT_MAIL_OPTIONS",E],notifyBySms:E=>["NOTIFY_SALE_RECEIPT_BY_SMS",E]})}}}));

@@ -1,0 +1,1 @@
+import{w as e,c as i,x as o,S as d}from"./index-YvzF9UjC.js";function x({url:r,height:a,width:n,isLoading:s,isError:t=!1}){const c=s?e.jsx(d,{size:30}):t?e.jsx("div",{className:"pdf-preview__error",children:"Failed to load the PDF document. Please try again."}):e.jsx("embed",{src:r,height:a,width:n});return e.jsx("div",{className:i(o,{loading:s}),children:c})}export{x as P};

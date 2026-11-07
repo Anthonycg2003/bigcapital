@@ -21,4 +21,5 @@
 
 npm-debug.log*
 
-dist
+# The hosted app serves the built files in dist. Sources stay local.
+/src

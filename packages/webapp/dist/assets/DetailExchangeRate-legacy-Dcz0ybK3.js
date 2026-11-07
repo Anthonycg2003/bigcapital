@@ -1,0 +1,1 @@
+System.register(["./index-legacy-D5XI0zpp.js"],(function(e,t){"use strict";var n,r,c,s,u;return{setters:[e=>{n=e.dw,r=e.an,c=e.w,s=e.oL,u=e.bh}],execute:function(){e("E",(function({exchangeRate:e,toCurrency:t}){const a=n();return r.isEqual(a,t)?null:c.jsxs(s,{label:u.get("exchange_rate"),children:["1 ",a," = ",e," ",t]})}))}}}));

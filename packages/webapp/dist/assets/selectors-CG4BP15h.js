@@ -1,0 +1,1 @@
+import{an as s}from"./index-YvzF9UjC.js";const c=(r,a)=>{const e=a.location?new URLSearchParams(a.location.search):null,t=["page_size","page","custom_view_id"];return e?s.mapValues(s.pick(Object.fromEntries(e),t),o=>parseInt(o,10)):null};export{c as p};

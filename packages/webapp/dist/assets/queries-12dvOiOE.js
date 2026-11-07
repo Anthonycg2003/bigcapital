@@ -1,0 +1,1 @@
+import{a4 as a,a5 as r,hd as o,he as s}from"./index-YvzF9UjC.js";function c(t){if(t instanceof FormData)return t;const e=new FormData,n=t;return n.file instanceof File&&e.append("file",n.file),e}function f(t){const e=a();return r({...t,mutationFn:n=>o(e,c(n))})}function u(t){const e=a({enableCamelCaseTransform:!0});return r({...t,mutationFn:n=>s(e,n)})}export{u as a,f as u};

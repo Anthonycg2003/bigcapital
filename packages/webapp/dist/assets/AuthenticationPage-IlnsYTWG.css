@@ -1,0 +1,1 @@
+.authTransition-enter{opacity:0}.authTransition-enter-active{opacity:1;transition:opacity .25s ease-in-out}.authTransition-enter-done,.authTransition-exit{opacity:1}.authTransition-exit-active{opacity:.5;transition:opacity .25s ease-in-out}.authTransition-exit-active{opacity:0;display:none}

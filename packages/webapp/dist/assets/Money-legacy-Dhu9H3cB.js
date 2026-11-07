@@ -1,0 +1,1 @@
+System.register(["./index-legacy-D5XI0zpp.js"],(function(e,n){"use strict";var t,r;return{setters:[e=>{t=e.w,r=e.du}],execute:function(){e("M",(function({amount:e,currency:n}){return t.jsx("span",{children:r(e,n)})}))}}}));

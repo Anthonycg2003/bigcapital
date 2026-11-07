@@ -1,0 +1,1 @@
+System.register(["./index-legacy-D5XI0zpp.js"],(function(e,t){"use strict";var n,r,c;return{setters:[e=>{n=e.w,r=e.c,c=e.bx}],execute:function(){e("D",(function({children:e}){return n.jsx("div",{className:r(c.DASHBOARD_DATATABLE),children:e})}))}}}));

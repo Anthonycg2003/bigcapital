@@ -1,0 +1,1 @@
+System.register(["./index-legacy-D5XI0zpp.js"],(function(e,t){"use strict";var n;return{setters:[e=>{n=e.w}],execute:function(){e("I",(function({text:e}){return n.jsx("div",{className:"input-group-prepend",children:n.jsx("span",{className:"input-group-text",children:e})})}))}}}));

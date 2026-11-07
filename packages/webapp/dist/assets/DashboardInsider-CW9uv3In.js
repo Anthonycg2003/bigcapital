@@ -1,0 +1,1 @@
+import{w as a,c as n}from"./index-YvzF9UjC.js";import{L as t}from"./PrivatePages-Be16i_pz.js";function _({loading:s,children:d,name:r,mount:i=!1,className:o,style:e}){return a.jsx("div",{className:n({dashboard__insider:!0,"dashboard__insider--loading":s,["dashboard__insider--".concat(r)]:!!r},o),style:e,children:a.jsx(t,{loading:s,mount:i,children:d})})}export{_ as D};

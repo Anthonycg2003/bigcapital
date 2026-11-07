@@ -1,0 +1,1 @@
+import{w as s,c as t,aZ as c}from"./index-YvzF9UjC.js";function d({className:r,children:o,name:a}){return s.jsx("div",{className:t({"dashboard__actions-bar":!0,["dashboard__actions-bar--".concat(a)]:!!a},r),children:s.jsx(c,{className:"navbar--dashboard-actions-bar",children:o})})}export{d as D};

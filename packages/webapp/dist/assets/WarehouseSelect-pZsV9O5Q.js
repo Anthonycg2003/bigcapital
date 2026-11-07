@@ -1,0 +1,1 @@
+import{w as r,ci as o}from"./index-YvzF9UjC.js";function c({warehouses:e=[],...s}){return r.jsx(o,{valueAccessor:"id",labelAccessor:"code",textAccessor:"name",popoverProps:{minimal:!0,usePortal:!0,inline:!1},...s,items:e})}export{c as W};

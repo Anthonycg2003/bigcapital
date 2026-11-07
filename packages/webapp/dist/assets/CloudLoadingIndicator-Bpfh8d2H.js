@@ -1,0 +1,1 @@
+import{w as s,c as r,bx as a,bG as e,S as o}from"./index-YvzF9UjC.js";function l({isLoading:n,children:i}){return s.jsxs("div",{className:r(a.CLOUD_SPINNER,{[a.IS_LOADING]:n}),children:[s.jsx(e,{condition:n,children:s.jsx(o,{size:30,value:null})}),i]})}export{l as C};

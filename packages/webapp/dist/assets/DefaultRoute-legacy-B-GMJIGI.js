@@ -1,0 +1,1 @@
+System.register(["./index-legacy-D5XI0zpp.js"],(function(e,r){"use strict";var t,n;return{setters:[e=>{t=e.w,n=e.bc}],execute:function(){e("DefaultRoute",(function(){return t.jsx(n,{from:"/preferences",to:"/preferences/general"})}))}}}));

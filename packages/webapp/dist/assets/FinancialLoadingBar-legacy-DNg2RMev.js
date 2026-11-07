@@ -1,0 +1,1 @@
+System.register(["./index-legacy-D5XI0zpp.js"],(function(e,r){"use strict";var s,n;return{setters:[e=>{s=e.w,n=e.ij}],execute:function(){e("F",(function(){return s.jsx("div",{className:"financial-progressbar",children:s.jsx(n,{})})}))}}}));

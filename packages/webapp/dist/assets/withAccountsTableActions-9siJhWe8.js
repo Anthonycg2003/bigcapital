@@ -1,0 +1,1 @@
+import{fF as s,fG as c,fH as o,fI as n,bp as S}from"./index-YvzF9UjC.js";const T=t=>({type:s,payload:{queries:t}}),a=()=>({type:c}),r=t=>({type:o,payload:t}),A=()=>({type:n}),u=t=>({setAccountsTableState:e=>t(T(e)),resetAccountsTableState:()=>t(a()),setAccountsSelectedRows:e=>t(r(e)),resetAccountsSelectedRows:()=>t(A())});function l(t){return S(null,u)(t)}export{l as w};

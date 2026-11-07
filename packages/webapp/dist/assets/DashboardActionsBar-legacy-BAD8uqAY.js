@@ -1,0 +1,1 @@
+System.register(["./index-legacy-D5XI0zpp.js"],(function(a,s){"use strict";var e,r,n;return{setters:[a=>{e=a.w,r=a.c,n=a.aZ}],execute:function(){a("D",(function({className:a,children:s,name:c}){return e.jsx("div",{className:r({"dashboard__actions-bar":!0,[`dashboard__actions-bar--${c}`]:!!c},a),children:e.jsx(n,{className:"navbar--dashboard-actions-bar",children:s})})}))}}}));
