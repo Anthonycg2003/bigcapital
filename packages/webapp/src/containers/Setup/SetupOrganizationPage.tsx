@@ -1,8 +1,11 @@
+import { Intent } from '@blueprintjs/core';
 import { x } from '@xstyled/emotion';
 import { Formik, FormikHelpers } from 'formik';
+import intl from 'react-intl-universal';
 import { getSetupOrganizationValidation } from './SetupOrganization.schema';
 import { SetupOrganizationForm } from './SetupOrganizationForm';
 import type { SetupOrganizationFormValues } from './SetupOrganization.schema';
+import { AppToaster } from '@/components';
 import { useOrganizationSetup } from '@/hooks/query';
 import { setCookie, transfromToSnakeCase } from '@/utils';
 
@@ -39,7 +42,7 @@ export function SetupOrganizationPage({ wizard }: SetupOrganizationPageProps) {
     values: SetupOrganizationFormValues,
     { setSubmitting }: FormikHelpers<SetupOrganizationFormValues>,
   ) => {
-    organizationSetupMutate({ ...transfromToSnakeCase(values) })
+    return organizationSetupMutate({ ...transfromToSnakeCase(values) })
       .then(() => {
         setSubmitting(false);
 
@@ -47,9 +50,25 @@ export function SetupOrganizationPage({ wizard }: SetupOrganizationPageProps) {
         setCookie('locale', values.language);
         wizard?.next?.();
       })
-      .catch(() => {
-        setSubmitting(false);
-      });
+      .catch(
+        (error: {
+          data?: { message?: unknown; errors?: Array<{ message?: string }> };
+        }) => {
+          const serverErrors = error?.data?.errors;
+          const errorMessage = serverErrors?.find(
+            (item) => item?.message,
+          )?.message;
+          const responseMessage = error?.data?.message;
+          AppToaster.show({
+            message:
+              errorMessage ||
+              (typeof responseMessage === 'string' && responseMessage) ||
+              intl.get('something_went_wrong'),
+            intent: Intent.DANGER,
+          });
+          setSubmitting(false);
+        },
+      );
   };
 
   return (

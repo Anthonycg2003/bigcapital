@@ -11,6 +11,7 @@ import { RegisterForm } from './RegisterForm';
 import {
   RegisterSchema,
   RegisterValues,
+  getUnhandledRegisterToast,
   transformRegisterErrorsToForm,
   transformRegisterToastMessages,
 } from './utils';
@@ -37,33 +38,42 @@ export function RegisterUserForm() {
     values: RegisterValues,
     { setSubmitting, setErrors }: FormikHelpers<RegisterValues>,
   ) => {
-    authRegisterMutate({
+    return authRegisterMutate({
       firstName: values.firstName,
       lastName: values.lastName,
       email: values.email,
       password: values.password,
     })
-      .then(() => {
+      .then(() =>
         authLoginMutate({
           email: values.email,
           password: values.password,
         }).catch(() => {
           AppToaster.show({
             message: intl.get('something_wentwrong'),
-            intent: Intent.SUCCESS,
+            intent: Intent.DANGER,
           });
-        });
-      })
+          setSubmitting(false);
+        }),
+      )
       .catch((response: ApiError) => {
         const errors =
-          (response.data?.errors as Array<{ type?: string }> | undefined) ?? [];
+          (response?.data?.errors as Array<{ type?: string }> | undefined) ??
+          [];
 
         const formErrors = transformRegisterErrorsToForm(errors);
         const toastMessages = transformRegisterToastMessages(errors);
+        const fallbackToast = getUnhandledRegisterToast(
+          response,
+          formErrors,
+          toastMessages,
+        );
 
-        toastMessages.forEach((toastMessage) => {
-          AppToaster.show(toastMessage);
-        });
+        [...toastMessages, ...(fallbackToast ? [fallbackToast] : [])].forEach(
+          (toastMessage) => {
+            AppToaster.show(toastMessage);
+          },
+        );
         setErrors(formErrors);
         setSubmitting(false);
       });
