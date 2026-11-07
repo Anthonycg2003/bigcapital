@@ -4,6 +4,7 @@
   "outputDirectory": "packages/webapp/dist",
   "functions": {
     "api/[...path].js": {
+      "maxDuration": 60,
       "includeFiles": "packages/server/dist/**"
     }
   },

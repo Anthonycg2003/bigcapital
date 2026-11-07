@@ -1,19 +1,24 @@
 import * as path from 'path';
 import { registerAs } from '@nestjs/config';
+import { postgresConnection } from './postgres-connection';
 
 const databaseUrl = () => process.env.DATABASE_URL?.trim() || '';
 
 export default registerAs('tenantDatabase', () => {
   const shared = {
     dbNamePrefix: process.env.TENANT_DB_NAME_PERFIX || 'bigcapital_tenant_',
-    migrationsDir: path.join(__dirname, '../../database/tenant/migrations'),
-    seedsDir: path.join(__dirname, '../../database/tenant/seeds/core'),
+    migrationsDir:
+      process.env.TENANT_DB_MIGRATION_DIR ||
+      path.join(__dirname, '../../database/tenant/migrations'),
+    seedsDir:
+      process.env.TENANT_DB_SEEDS_DIR ||
+      path.join(__dirname, '../../database/tenant/seeds/core'),
   };
 
   if (databaseUrl()) {
     return {
       client: 'pg',
-      connection: databaseUrl(),
+      connection: postgresConnection(databaseUrl()),
       ...shared,
     };
   }

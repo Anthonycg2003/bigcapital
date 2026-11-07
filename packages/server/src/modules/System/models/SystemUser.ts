@@ -1,4 +1,4 @@
-import * as bcrypt from 'bcrypt';
+import * as bcrypt from 'bcryptjs';
 import { BaseModel } from '@/models/Model';
 
 export class SystemUser extends BaseModel {
@@ -37,9 +37,8 @@ export class SystemUser extends BaseModel {
   }
 
   async hashPassword(): Promise<void> {
-    const salt = await bcrypt.genSalt();
     if (!/^\$2[abxy]?\$\d+\$/.test(this.password)) {
-      this.password = await bcrypt.hash(this.password, salt);
+      this.password = await bcrypt.hash(this.password, 10);
     }
   }
 

@@ -1,15 +1,9 @@
-import * as bcrypt from 'bcrypt';
+import * as bcrypt from 'bcryptjs';
 import { createHash } from 'crypto';
 import { AuthApiKeyPrefix, AuthApiKeyPrefixLength } from './Auth.constants';
 
 export const hashPassword = (password: string): Promise<string> =>
-  new Promise((resolve) => {
-    bcrypt.genSalt(10, (error, salt) => {
-      bcrypt.hash(password, salt, (err, hash: string) => {
-        resolve(hash);
-      });
-    });
-  });
+  bcrypt.hash(password, 10);
 
 /**
  * Extracts and validates an API key from the Authorization header

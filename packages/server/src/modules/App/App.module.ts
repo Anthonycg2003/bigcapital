@@ -132,7 +132,7 @@ import { AppThrottleModule } from './AppThrottle.module';
         fallbackLanguage: 'en',
         loaderOptions: {
           path: join(__dirname, '../../i18n/'),
-          watch: true,
+          watch: !process.env.DATABASE_URL,
         },
       }),
       resolvers: [

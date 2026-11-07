@@ -1,5 +1,6 @@
 import * as path from 'path';
 import { registerAs } from '@nestjs/config';
+import { postgresConnection } from './postgres-connection';
 
 const databaseUrl = () => process.env.DATABASE_URL?.trim() || '';
 
@@ -14,7 +15,7 @@ export default registerAs('systemDatabase', () => {
   if (databaseUrl()) {
     return {
       client: 'pg',
-      connection: databaseUrl(),
+      connection: postgresConnection(databaseUrl()),
       migrationDir,
       seedsDir,
     };
