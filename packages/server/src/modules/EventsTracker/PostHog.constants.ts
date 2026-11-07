@@ -1,1 +1,0 @@
-export const POSTHOG_PROVIDER = 'POSTHOG_PROVIDER';
