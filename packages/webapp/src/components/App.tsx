@@ -29,11 +29,6 @@ const RegisterVerify = lazy(() =>
     default: m.RegisterVerify,
   })),
 );
-const PaymentPortalPage = lazy(() =>
-  import('@/containers/PaymentPortal/PaymentPortalPage').then((m) => ({
-    default: m.PaymentPortalPage,
-  })),
-);
 
 /**
  * App inner.
@@ -58,10 +53,6 @@ function AppInsider({ history }: { history: History }) {
                 children={<EmailConfirmation />}
               />
               <Route path={'/auth'} children={<AuthenticationPage />} />
-              <Route
-                path={'/payment/:linkId'}
-                children={<PaymentPortalPage />}
-              />
               <Route path={'/'} children={<DashboardPrivatePages />} />
             </Switch>
           </Router>

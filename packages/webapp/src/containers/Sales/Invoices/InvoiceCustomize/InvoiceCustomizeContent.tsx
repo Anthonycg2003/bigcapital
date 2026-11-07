@@ -15,12 +15,6 @@ import { BrandingTemplateForm } from '@/containers/BrandingTemplates/BrandingTem
 import { useIsTemplateNamedFilled } from '@/containers/BrandingTemplates/utils';
 import { useDrawerActions } from '@/hooks/state';
 
-const InvoiceCustomizePaymentPreview = lazy(() =>
-  import('./InvoiceCustomizePaymentPreview').then((module) => ({
-    default: module.InvoiceCustomizePaymentPreview,
-  })),
-);
-
 const InvoiceCustomizeMailReceiptPreview = lazy(() =>
   import('./InvoiceCustomizeMailReceiptPreview').then((module) => ({
     default: module.InvoiceCustomizeMailReceiptPreview,
@@ -80,15 +74,6 @@ function InvoiceCustomizeFormContent() {
             panel={
               <Suspense fallback={<Spinner />}>
                 <InvoiceCustomizePdfPreview />
-              </Suspense>
-            }
-          />
-          <Tab
-            id={'payment-page'}
-            title={'Payment page'}
-            panel={
-              <Suspense fallback={<Spinner />}>
-                <InvoiceCustomizePaymentPreview />
               </Suspense>
             }
           />

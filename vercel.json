@@ -3,12 +3,7 @@
   "buildCommand": "CI='' pnpm run build:webapp",
   "outputDirectory": "packages/webapp/dist",
   "rewrites": [{
-      "source": "/api/:slug*",
-      "destination": "https://dev.bigcapital.ly/api/:slug*"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/"
-    }
-  ]
+    "source": "/(.*)",
+    "destination": "/"
+  }]
 }

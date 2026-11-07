@@ -1,15 +1,15 @@
 import { useFormikContext } from 'formik';
 import * as FF from 'fp-ts/function';
+import { InvoiceMailReceiptProps } from './InvoiceMailReceipt';
 import { InvoiceMailReceiptPreview } from './InvoiceMailReceiptPreview';
 import { InvoiceCustomizeFormValues } from './types';
 import { Box } from '@/components';
 import { useElementCustomizeContext } from '@/containers/ElementCustomize/ElementCustomizeProvider';
-import { InvoicePaymentPagePreviewProps } from '@/containers/PaymentPortal/InvoicePaymentPagePreview';
 
 const withInvoiceMailReceiptPreviewConnected = <P extends Object>(
   Component: React.ComponentType<P>,
 ) => {
-  return (props: Omit<P, keyof InvoicePaymentPagePreviewProps>) => {
+  return (props: Omit<P, keyof InvoiceMailReceiptProps>) => {
     const { values } = useFormikContext<InvoiceCustomizeFormValues>();
     const { brandingState } = useElementCustomizeContext();
 
@@ -17,7 +17,7 @@ const withInvoiceMailReceiptPreviewConnected = <P extends Object>(
       ...brandingState,
       ...values,
     };
-    const mergedProps: InvoicePaymentPagePreviewProps = {
+    const mergedProps: Partial<InvoiceMailReceiptProps> = {
       companyLogoUri: mergedBrandingState?.companyLogoUri,
       primaryColor: mergedBrandingState?.primaryColor,
       // organizationAddress: mergedBrandingState,
