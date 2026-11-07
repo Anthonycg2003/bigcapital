@@ -1,0 +1,1 @@
+System.register(["./index-legacy-DIiV7_Ij.js"],(function(e,t){"use strict";var r,n,a;return{setters:[e=>{r=e.w,n=e.be,a=e.dq}],execute:function(){function t({value:e,format:t="YYYY MMM DD"}){const u=n.get(`date_formats.${t}`);return r.jsx(r.Fragment,{children:a(e).format(u)})}e({F:function({value:e,column:{formatDate:n}}){return r.jsx(t,{value:e,...n})},a:t})}}}));

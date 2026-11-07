@@ -1,0 +1,1 @@
+System.register(["./index-legacy-DIiV7_Ij.js"],(function(e,s){"use strict";var r,t;return{setters:[e=>{r=e.w,t=e.cf}],execute:function(){e("W",(function({warehouses:e=[],...s}){return r.jsx(t,{valueAccessor:"id",labelAccessor:"code",textAccessor:"name",popoverProps:{minimal:!0,usePortal:!0,inline:!1},...s,items:e})}))}}}));

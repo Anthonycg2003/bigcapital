@@ -1,0 +1,1 @@
+System.register(["./index-legacy-DIiV7_Ij.js"],(function(t,e){"use strict";var i,n;return{setters:[t=>{i=t.w,n=t.c8}],execute:function(){t("S",(function({spacing:t=20,align:e="stretch",justify:s="top",...c}){return i.jsx(n.div,{display:"flex",flexDirection:"column",justifyContent:"justify",gap:`${t}px`,alignItems:e,...c})}))}}}));

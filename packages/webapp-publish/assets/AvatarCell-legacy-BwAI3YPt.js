@@ -1,0 +1,1 @@
+System.register(["./index-legacy-DIiV7_Ij.js"],(function(e,s){"use strict";var t,a;return{setters:[e=>{t=e.w,a=e.b7}],execute:function(){e("A",(function({row:{original:e},size:s}){return t.jsx("span",{className:"avatar","data-size":s,children:a(e?.display_name)})}))}}}));

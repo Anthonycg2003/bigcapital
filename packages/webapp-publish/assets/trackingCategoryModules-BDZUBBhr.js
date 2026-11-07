@@ -1,0 +1,1 @@
+const a={SaleInvoices:"sale_invoices",SaleEstimates:"sale_estimates",ManualJournals:"manual_journals"},e=[a.SaleInvoices,a.SaleEstimates,a.ManualJournals],s={[a.SaleInvoices]:"tracking_categories.module.sale_invoices",[a.SaleEstimates]:"tracking_categories.module.sale_estimates",[a.ManualJournals]:"tracking_categories.module.manual_journals"};export{a as T,e as a,s as b};

@@ -1,0 +1,1 @@
+System.register([],(function(t,e){"use strict";return{execute:function(){const e="BILLS";t("b",{all:()=>[e],list:t=>[e,t],detail:t=>["BILL",t],due:t=>[e,"BILLS_DUE",t],paymentTransactions:t=>["BILLS_PAYMENT_TRANSACTIONS",t]})}}}));

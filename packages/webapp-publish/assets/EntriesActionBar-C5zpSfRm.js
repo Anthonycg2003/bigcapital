@@ -1,0 +1,1 @@
+var a=Object.freeze,i=Object.defineProperty;var t=(o,r)=>a(i(o,"raw",{value:a(r||o.slice())}));import{c6 as m,ch as s}from"./index-D6eJWRgj.js";var p;const l=m(s)(p||(p=t(["\n  padding-bottom: 12px;\n  display: flex;\n\n  .bp4-form-group {\n    margin-bottom: 0;\n\n    label.bp4-label {\n      opacity: 0.6;\n      margin-right: 8px;\n    }\n  }\n"])));export{l as E};

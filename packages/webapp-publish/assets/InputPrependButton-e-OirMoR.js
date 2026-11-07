@@ -1,0 +1,1 @@
+import{r as p,w as e,Z as r,c as u,he as c,b5 as i}from"./index-D6eJWRgj.js";function x({buttonProps:s={},tooltip:a=!1,tooltipProps:n={}}){const t=p.useMemo(()=>e.jsx(r,{className:u("input-prepend__button",c),...s}),[s]),o=p.useMemo(()=>e.jsx(i,{...n,children:t}),[n,t]);return e.jsx("div",{class:"input-prepend",children:a?o:t})}export{x as I};

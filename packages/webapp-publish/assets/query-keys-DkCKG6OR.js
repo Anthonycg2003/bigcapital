@@ -1,0 +1,1 @@
+const S="SALE_ESTIMATES",T="SALE_ESTIMATE",A="SALE_ESTIMATE_SMS_DETAIL",_="NOTIFY_SALE_ESTIMATE_BY_SMS",I="SALE_ESTIMATE_MAIL_OPTIONS",M={all:()=>[S],list:E=>[S,E],detail:E=>[T,E],smsDetail:E=>[A,E],html:E=>["SALE_ESTIMATE_HTML",E],state:()=>["SALE_ESTIMATE_STATE"],mailOptions:E=>[I,E],notifyBySms:E=>[_,E]};export{M as e};

@@ -1,0 +1,1 @@
+System.register(["./index-legacy-DIiV7_Ij.js"],(function(e,n){"use strict";var i,s,t,c,r;return{setters:[e=>{i=e.w,s=e.c,t=e.bu,c=e.bD,r=e.S}],execute:function(){e("C",(function({isLoading:e,children:n}){return i.jsxs("div",{className:s(t.CLOUD_SPINNER,{[t.IS_LOADING]:e}),children:[i.jsx(c,{condition:e,children:i.jsx(r,{size:30,value:null})}),n]})}))}}}));

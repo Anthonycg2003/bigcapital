@@ -1,0 +1,1 @@
+import{w as n,c as a,x as e,S as r}from"./index-D6eJWRgj.js";function l(s){const{isLoading:i,children:o}=s,t=n.jsx("div",{className:a(e,"is-loading"),children:n.jsx(r,{size:30})});return i?t:o}export{l as D};

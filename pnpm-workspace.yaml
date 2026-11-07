@@ -2,5 +2,7 @@ packages:
   # all packages in direct subdirs of packages/
   - 'packages/*'
   - 'shared/*'
+  # Static bundle for Cursor publish (copied from webapp dist); not a workspace package
+  - '!packages/webapp-publish'
 allowBuilds:
   bcrypt: true

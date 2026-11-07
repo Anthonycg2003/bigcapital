@@ -1,0 +1,1 @@
+const _="SALE_RECEIPTS",S="SALE_RECEIPT",T="SALE_RECEIPT_SMS_DETAIL",I="NOTIFY_SALE_RECEIPT_BY_SMS",A="SALE_RECEIPT_MAIL_OPTIONS",L={all:()=>[_],list:E=>[_,E],detail:E=>[S,E],smsDetail:E=>[T,E],html:E=>["SALE_RECEIPT_HTML",E],state:()=>["SALE_RECEIPT_STATE"],mailOptions:E=>[A,E],notifyBySms:E=>[I,E]};export{L as r};
